@@ -38,9 +38,9 @@ function onSelectBreed(e){
         loader.classList.replace('loader', 'is-hidden');
         selectBreeds.classList.remove('is-hidden');
 
-        const {SEARCH_BREEDS_URL, breeds} = data[0];
+        const {url, breeds} = data[0];
 
-        catInfo.innerHTML = `<div class="box-img"><img src="${SEARCH_BREEDS_URL}" alt="${breeds[0].name}" width="400"/></div><div class="box">
+        catInfo.innerHTML = `<div class="box-img"><img src="${url}" alt="${breeds[0].name}" width="400"/></div><div class="box">
         <h1>${breeds[0].name}</h1><p>${breeds[0].description}</p><p><b>Temperament:</b> ${breeds[0].temperament}</p></div>`;
         catInfo.classList.replace('is-hidden');
     }).catch(errorFail);
