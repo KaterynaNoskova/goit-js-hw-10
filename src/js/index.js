@@ -19,7 +19,9 @@ let arrayBreedId = [];
 fetchBreeds().then(data=>{
     data.forEach(el => {
         arrayBreedId.push({text: el.name, value: el.id});
+        console.log(data);
     });
+    
     new SlimSelect({
         select: selectBreeds,
         data: arrayBreedId,
