@@ -21,7 +21,7 @@ fetchBreeds().then(data=>{
         arrayBreedId.push({text: el.name, value: el.id});
         console.log(data);
     });
-    
+    selectBreeds.insertAdjacentHTML = arrayBreedId;
     new SlimSelect({
         select: selectBreeds,
         data: arrayBreedId,
