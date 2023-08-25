@@ -1,5 +1,5 @@
-API_KEY = "live_TwsPnWVWgRd7Je8KwFxuzAGnQywMPFuZYtMA8QXjIsdil17ShXwDaD7XZtCENu2s";
-url = 'https://api.thecatapi.com/v1';
+const API_KEY = "live_TwsPnWVWgRd7Je8KwFxuzAGnQywMPFuZYtMA8QXjIsdil17ShXwDaD7XZtCENu2s";
+const url = 'https://api.thecatapi.com/v1';
 // SEARCH_BREEDS_URL = 'https://api.thecatapi.com/v1/images';
 
 export function fetchBreeds() {
