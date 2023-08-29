@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { Notify } from 'notiflix';
 import {fetchBreeds, fetchCatByBreeds} from './cat-api';
 import '../styles/style.css';
 
@@ -54,50 +53,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
-
-
-
-// const data = async function fetchBreed(){
-//     data.forEach(el => {
-//         arrayBreedId.push({ text: el.name, value: el.id });
-//         // console.log(data);
-//     });
-//     selectBreeds.insertAdjacentHTML("beforeend", arrayBreedId);
-//     new SlimSelect({
-//         select: selectBreeds,
-//         data: arrayBreedId,
-//     });
-// };
-
-// selectBreeds.addEventListener('change', onSelectBreed);
-
-// function onSelectBreed(e){
-//     loader.classList.replace('is-hidden', 'loader');
-//     selectBreeds.classList.add('is-hidden');
-//     catInfo.classList.add('is-hidden');
-
-//     const breedId = e.currentTarget.value;
-//     fetchCatByBreeds(breedId).then(data=>{
-//         loader.classList.replace('loader', 'is-hidden');
-//         selectBreeds.classList.remove('is-hidden');
-
-//         const {URL, breeds} = data[0];
-
-//         catInfo.innerHTML = `<div class="box-img"><img src="${URL}" alt="${breeds[0].name}" width="400"/></div><div class="box">
-//         <h1>${breeds[0].name}</h1><p>${breeds[0].description}</p><p><b>Temperament:</b> ${breeds[0].temperament}</p></div>`;
-//         catInfo.classList.replace('is-hidden');
-//     }).catch(errorFail);
-// };
-
-// function errorFail(err){
-//     selectBreeds.classList.remove('is-hidden');
-//     loader.classList.replace('loader', 'is-hidden');
-
-//     Notify.failure('Oops! Something went wrong! Try reloading the page!',
-//     {
-//         position:'center-center',
-//         timeout: 10000,
-//         width: '250px',
-//         fontSize: '14px'
-//     });
-// };
